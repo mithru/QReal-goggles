@@ -1,0 +1,84 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+  <script src="https://unpkg.c
+  om/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+
+<body>
+  <!-- sticky menu -->
+  <div id="menu">
+    <div id="logo">
+      <!-- TODO : fix the left padding here. logo is too far into the page -->
+      <img alt="Bolle logo" src="images/bolle-logo.jpg"/>
+    </div>
+    <div id="nav">
+      <img alt="Dummy navigation button" src="images/hamburger-icon.png"/>
+    </div>
+  </div>
+
+  <div id="content">
+    <div id="card">
+      <model-viewer
+        ar
+        alt=""
+        src= "model-viewer-assets/PAN_035.glb.gltf"
+        ios-src= "model-viewer-assets/PAN_035.glb.usdz"
+        background-color="#E7E7E7"
+        environment-image="model-viewer-assets/BLUR.hdr"
+        stage-light-intensity="1"
+        exposure="1"
+        camera-controls
+        camera-orbit="40deg 55deg"
+        auto-rotate
+        interaction-prompt="auto">
+      </model-viewer>
+      <div id="options">
+        <h2> Available versions </h2>
+        <!-- TODO : add the images here as buttons -->
+        <a href="/green-emerald.html">
+          <img class = "button" alt="Phantom Green Emerald visor" src="images/mountain-green-emerald.png" / >
+        </a>
+        <a href="/phantom-plus-blue.html">
+          <img class = "button" alt="Phantom+ visor - blue" src="images/mountain-phantom.png" / >
+        </a>
+        <a href="/fire-red.html">
+          <img class = "button" alt="Phantom Fire Red visor" src="images/mountain-fire-red.png" / >
+        </a>
+        <a href="/vermillon-blue.html">
+          <img class = "button" alt="Phantom Vermillon Blue visor" src="images/mountain-vermillon-blue.png" / >
+        </a>
+      </div>
+    </div>
+    <div id="info">
+      <h1> PHANTOM </h1>
+      <p class="about"> VERMILLON BLUE </p>
+      <p class="about"> CAT : 1-3 </p>
+      <p class="about"> BASE TINT : PINK </p>
+      <p class="about"> VLT : 61-15% </p>
+
+      <!-- TODO - make this divider a margin or horizontal line or something -->
+      <p class = "divider" style= "color: #DD271D"> ____________ </p>
+
+
+      <p class = "description"> Phantom lens technology – developed in partnership with Essilor® Sun Solution™ – redefines how you see the environment.
+Industry-leading optical clarity, light-adaptive lens & high contrast filter, allow you to reveal the invisible.
+
+The Phantom lens is a combination of 3 advanced technologies that revolutionize how you see your environment.
+Made with NXT® material for enhanced definition and a molecular photochromic filter that adapts to all light conditions.
+Also, a high-contrast filter improves color and depth perception. </p>
+
+      <!-- <h2> Technologies </h2> -->
+      <!-- TODO add the table here. likely a flexbox-->
+    </div>
+</body>
+
+</html>

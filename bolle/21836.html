@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  <title> Bolle Nevada - 21836 </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+
+<body>
+  <!-- sticky menu -->
+  <div id="menu">
+    <div id="logo">
+      <!-- TODO : fix the left padding here. logo is too far into the page -->
+      <img alt="Bolle logo" src="images/bolle-logo.jpg"/>
+    </div>
+    <div id="nav">
+      <img alt="Dummy navigation button" src="images/hamburger-icon.png"/>
+    </div>
+  </div>
+
+
+  <div id="content">
+    <div id="card">
+      <div class="placeholder">
+        <model-viewer
+          loading="eager"
+          ar
+          alt=""
+          src= "model-viewer-assets/Bolle_Color_3_X.glb"
+          ios-src= "model-viewer-assets/Bolle_Color_3_X.glb"
+          background-color="#E7E7E7"
+          environment-image="model-viewer-assets/BLUR.hdr"
+          stage-light-intensity="1"
+          exposure="1"
+          camera-controls
+          camera-orbit="30deg 80deg"
+          auto-rotate
+          interaction-prompt="auto">
+          <div id="IG-icon">
+            <a href="https://instagram.com/a/r/?effect_id=238530910692437&ch=MmFlZjcwMWQ1ODIzY2IxZTZjMzExNjBhMzBkNmU1N2E=" class="fab" tabindex="2" >
+            <!-- <a href="#" tabindex="2" > -->
+
+            <p class="about">  TRY ON </p>
+              <!-- <img class="IG-icon" alt="Button to try on goggles in Instagram" src="images/instagram-icon.png"/> -->
+            </a>
+          </div>
+        </model-viewer>
+      </div>
+
+      <div id="options">
+        <h2> Available versions </h2>
+        <!-- TODO : add the images here as buttons -->
+        <a href="21832.html">
+          <img class = "button" src="images/21832.jpg" / >
+        </a>
+        <a href="21833.html">
+          <img class = "button" src="images/21833.jpg" / >
+        </a>
+        <a href="21836.html">
+          <img class = "button" src="images/21836.jpg" / >
+        </a>
+        <a href="21839.html">
+          <img class = "button" src="images/21839.jpg" / >
+        </a>
+        <a href="21841.html">
+          <img class = "button" src="images/21841.jpg" / >
+        </a>
+      </div>
+    </div>
+    <div id="info">
+      <h1> NEVADA </h1>
+      <p class="about"> 21836 / MATTE BLUE & RED DIAGONAL</p>
+      <p class="about"> SUNRISE </p>
+      <p class="about"> SIZE M/L </p>
+      <!-- <p class="about"> VLT : 56-12% </p> -->
+
+      <!-- TODO - make this divider a margin or horizontal line or something -->
+      <p class = "divider" style= "color: #DD271D"> _______________ </p>
+
+
+      <p class = "description">
+        A bold style for this new Bollé cylindrical frameless goggle, NEVADA is the best choice of our athletes. Let's hit the mountains with this perfect combination between style and technology.
+      </p>
+<!--
+        Phantom lens technology – developed in partnership with Essilor® Sun Solution™ – redefines how you see the environment.
+Industry-leading optical clarity, light-adaptive lens & high contrast filter, allow you to reveal the invisible.
+
+The Phantom lens is a combination of 3 advanced technologies that revolutionize how you see your environment.
+Made with NXT® material for enhanced definition and a molecular photochromic filter that adapts to all light conditions.
+Also, a high-contrast filter improves color and depth perception. </p> -->
+
+      <!-- <h2> Technologies </h2> -->
+      <!-- TODO add the table here. likely a flexbox-->
+    </div>
+</body>
+
+</html>
