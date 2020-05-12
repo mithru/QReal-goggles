@@ -1,3 +1,3 @@
 # QReal-goggles
 
-Check out the [website here](https://mithru.github.io/QReal-goggles/)
+Check out the [Bolle website here](https://mithru.github.io/QReal-goggles/bolle/)
